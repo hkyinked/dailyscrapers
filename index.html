@@ -31,12 +31,30 @@
 		<!-- Intro -->
 			<section id="intro" class="main style1 dark fullscreen">
 				<div class="content">
-					<header>
-						<h2>Welcome!</h2>
-					</header>
-					<p id="introheading">Welcome to <strong>Daily Scrapers</strong> 
-					
-					</p>
+						<header>
+						<div class="header header-video">
+
+								<!-- We show the video image placeholder instead of the video for small devices  -->
+								<div class="video-image visible-xs visible-sm" style="background-image: url('assets/img/video-placeholder.png')"></div>
+						
+								<video id="video-source" preload="auto" loop="loop" muted="muted" volume="0">
+									<source src="" type="video/mp4">
+								</video>
+								<div class="container upper-container text-center">
+										<div class="video-text">
+											<h2>Welcome to</h2>
+											<h2 class="title-uppercase title-no-upper-margin">Daily Scrapers</h2>
+										</div>
+										<br />
+										<!--  We hide the play button on small devices -->
+										 <button type="button" data-video="video-source" data-toggle="video" class="btn btn-lg btn-neutral hidden-xs hidden-sm">
+											<i class="fa fa-play"></i> Pause Video
+										</button>
+						
+								</div>
+							</div>
+						</header>
+						
 					<footer>
 						<a href="#one" class="button style2 down">Down</a>
 					</footer>
@@ -49,7 +67,7 @@
 					<header>
 						<h2>Daily Scrapers Logo basic style T-shirt</h2>
 					</header>
-					<p><a href="#logotshirt"><img responsive src="images/thumbs/logo-black-shirt.jpg.png" alt="" width="340" height="420"></a></p>
+					<p><a href="#logotshirt"><img responsive src="images/thumbs/logo-black-shirt.jpg.png" class="img-responsive" alt="" width="auto" height="auto"></a></p>
 				</div>
 				<a href="#two" class="button style2 down anchored">Next</a>
 			</section>
@@ -62,7 +80,7 @@
 					<header>
 						<h2>Logo style 2</h2>
 					</header>
-					<p><a href="#"><img src="images/thumbs/tshirtstyle2.png" class="img-responsive" alt="" width="auto" height="300"></a></p>
+					<p><a href="#"><img src="images/thumbs/blacklogo.png" class="img-responsive" alt="" width="auto" height="auto"></a></p>
 				</div>
 				<a href="#work" class="button style2 down anchored">Next</a>
 			</section>
@@ -73,30 +91,28 @@
 					<header>
 						<h2>Our Products</h2>
 						<p id="product_divider"></p>
-						<p>Lorem ipsum dolor sit amet et sapien sed elementum egestas dolore condimentum.
-						Fusce blandit ultrices sapien, in accumsan orci rhoncus eu. Sed sodales venenatis
-						arcu, id varius justo euismod in. Curabitur egestas consectetur magna vitae.</p>
+						<p>Browse from some of our latest products.</p>
 					</header>
 
 					<!-- Gallery  -->
 						<div class="gallery">
 							<article class="from-left">
-								<a href="images/thumbs/logo-black-shirt.jpg.png" class="image fit"><img src="images/thumbs/logo-black-shirt.jpg.png" title="Not actual representation of exact shirt" alt="" width="300px" height="320"/></a>
+								<a href="images/thumbs/blacklogo.png" class="image fit"><img src="images/thumbs/blacklogo.png" title="Not actual representation of exact shirt" alt="" width="auto" height="auto"/></a>
 							</article>
 							<article class="from-right">
-								<a href="images/thumbs/tshirtstyle2.png" class="image fit"><img src="images/thumbs/tshirtstyle2.png" title="test mock style 2" alt="" width="300px" height="320" /></a>
+								<a href="images/thumbs/blacklogobak.png" class="image fit"><img src="images/thumbs/blacklogobak.png" title="Default logo with sponsor back" alt="" width="auto" height="auto" /></a>
 							</article>
 							<article class="from-left">
 								<a href="images/thumbs/03.jpg" class="image fit"><img src="images/thumbs/03.jpg" title="Air Lounge" alt="" width="300px" height="320" /></a>
 							</article>
 							<article class="from-right">
-								<a href="images/fulls/04.jpg" class="image fit"><img src="images/thumbs/04.jpg" title="Carry on" alt="" /></a>
+								<a href="images/fulls/04.jpg" class="image fit"><img src="images/thumbs/04.jpg" title="Carry on" alt="" width="300px" height="320" /></a>
 							</article>
 							<article class="from-left">
-								<a href="images/fulls/05.jpg" class="image fit"><img src="images/thumbs/05.jpg" title="The sparkling shell" alt="" /></a>
+								<a href="images/fulls/05.jpg" class="image fit"><img src="images/thumbs/05.jpg" title="The sparkling shell" alt="" width="300px" height="320" /></a>
 							</article>
 							<article class="from-right">
-								<a href="images/fulls/06.jpg" class="image fit"><img src="images/thumbs/06.jpg" title="Bent IX" alt="" /></a>
+								<a href="images/fulls/06.jpg" class="image fit"><img src="images/thumbs/06.jpg" title="Bent IX" alt="" width="300px" height="320" /></a>
 							</article>
 						</div>
 
@@ -107,7 +123,7 @@
 			<section id="contact" class="main style3 secondary">
 				<div class="content">
 					<header><h2>Get in touch</h2>
-						<p>Lorem ipsum dolor sit amet et sapien sed elementum egestas dolore condimentum.</p>
+						<p>Send us your feedback. Got any suggestions for us?.. Let us know!.</p>
 					</header>
 					<div class="box">
 						<form method="post" action="#">

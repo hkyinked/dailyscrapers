@@ -551,7 +551,7 @@ input, select, textarea {
 
 	h1, h2, h3, h4, h5, h6 {
 		font-weight: 900;
-		color: inherit;
+		color: rgb(250, 134, 39);
 		letter-spacing: -0.0325em;
 	}
 
@@ -616,6 +616,8 @@ input, select, textarea {
 
 	p, ul, ol, dl, table {
 		margin-bottom: 1em;
+		color:rgba(15, 245, 214, 0.808);
+		font-weight: 600;
 	}
 
 /* Box */
@@ -691,7 +693,7 @@ input, select, textarea {
 			background-repeat: no-repeat;
 			text-indent: -10em;
 			overflow: hidden;
-			background-color: rgb(250, 134, 39);
+
 		}
 
 			input[type="button"].down.anchored,
@@ -704,7 +706,6 @@ input, select, textarea {
 				border-radius: 3em 3em 0 0;
 				height: 4.5em;
 				margin-left: -2.5em;
-				background-color: rgb(250, 134, 39);
 			}
 
 		input[type="button"].anchored,
@@ -721,7 +722,7 @@ input, select, textarea {
 		input[type="reset"]:hover,
 		.button:hover,
 		button:hover {
-			background-color:rgba(15, 245, 214, 0.699);
+			background-color:rgba(15, 245, 214, 0.808);
 		}
 
 		input[type="button"]:active,
@@ -729,7 +730,7 @@ input, select, textarea {
 		input[type="reset"]:active,
 		.button:active,
 		button:active {
-			background-color: rgba(15, 245, 214, 0.699);
+			background-color: rgba(15, 245, 214, 0.808);
 		}
 
 		input[type="button"].style2,
@@ -747,7 +748,7 @@ input, select, textarea {
 			input[type="reset"].style2:hover,
 			.button.style2:hover,
 			button.style2:hover {
-				background-color: rgba(15, 245, 214, 0.699);
+				background-color: rgba(15, 245, 214, 0.808);
 			}
 
 			input[type="button"].style2:active,
@@ -755,7 +756,7 @@ input, select, textarea {
 			input[type="reset"].style2:active,
 			.button.style2:active,
 			button.style2:active {
-				background-color: rgba(15, 245, 214, 0.699);
+				background-color: rgba(15, 245, 214, 0.808);
 			}
 
 			input[type="button"].style2.down,
@@ -943,6 +944,8 @@ input, select, textarea {
 	.image {
 		position: relative;
 		display: inline-block;
+		max-width: 300px;
+		max-height: 320px;
 	}
 
 		.image:before {
@@ -986,6 +989,10 @@ input, select, textarea {
 				margin: 0 auto;
 				width: auto;
 			}
+		.img-responsive {
+			max-width: 80%;
+			max-height: 80%;
+		}
 
 /* List */
 
@@ -1008,6 +1015,7 @@ input, select, textarea {
 			border-left: solid 1px #e5e6e7;
 			padding: 0 0 0 0.5em;
 			margin: 0 0 0 0.5em;
+			color: rgb(250, 134, 39);
 		}
 
 			ul.menu li:first-child {
@@ -1155,6 +1163,7 @@ input, select, textarea {
 
 		ul.icons li {
 			display: inline-block;
+			color: rgb(250, 134, 39);
 		}
 
 		ul.icons a {
@@ -1164,6 +1173,7 @@ input, select, textarea {
 			line-height: 2em;
 			text-align: center;
 			border: 0;
+			color: rgb(250, 134, 39);
 		}
 
 /* Sections/Article */
@@ -1820,7 +1830,7 @@ input, select, textarea {
 		left: 0;
 		top: 0;
 		width: 100%;
-		background:rgba(15, 245, 214, 0.699);
+		background:rgba(15, 245, 214, 0.808);
 		color:rgba(236, 234, 234, 0.9);
 		height: 3em;
 		line-height: 3em;
@@ -2038,7 +2048,7 @@ input, select, textarea {
 				display: block;
 				width: 260px;
 				margin: 25px auto;
-				border-color:rgba(15, 245, 214, 0.699);
+				border-color:rgba(15, 245, 214, 0.808);
 			
 		}
 
@@ -2047,7 +2057,7 @@ input, select, textarea {
 			}
 
 			.main.style3.primary {
-				background: #ffffff;
+				background: #5f5e5e;
 			}
 
 			.main.style3.secondary {
@@ -2063,7 +2073,7 @@ input, select, textarea {
 			}
 
 			.main.dark .button.style2 {
-				border-color: #ffffff;
+				border-color: rgb(250, 134, 39);
 			}
 
 				.main.dark .button.style2:hover {
@@ -2274,11 +2284,24 @@ input, select, textarea {
 		background-position: top left, center center;
 	}
 
+/* work */
+
+	#work {
+		background: url("images/overlay.png"), url("../../images/three.png");
+		background-size: 256px 256px, cover;
+		background-attachment: fixed, fixed;
+		background-position: top left, center center;
+	}
+
 /* Contact */
 
 	#contact {
 		overflow: hidden;
 		padding-bottom: 0;
+		background: url("images/overlay.png"), url("../../images/four.jpg");
+		background-size: 256px 256px, cover;
+		background-attachment: fixed, fixed;
+		background-position: top left, center center;
 	}
 
 		#contact .box {
